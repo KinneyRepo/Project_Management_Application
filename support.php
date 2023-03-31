@@ -1,11 +1,9 @@
+<!DOCTYPE html>
 <html>
-<head>
-
-    <main>
-<body>
-    <h1>hello</h1>
-</body>
-
-    </main>
-
+  <head>
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+  </body>
 </html>
