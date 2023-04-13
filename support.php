@@ -13,33 +13,35 @@
     <h1>Project Management Plus</h1>
   </header>
   <nav>
-  <button id="employee-portal">Employee Portal</button>
+    <!-- Redirect to login.php -->
+  <button onclick="location.href = 'login.php';" id="employee-portal">Employee Portal</button>
   </nav>
   <main>
     <div class="content">
-      <h2>Welcome to PM Plus payment and support page</h2>
-      <p>Make payments to employees or contact support.</p>
-      
+      <h2>Welcome to PM Plus Payment and Support</h2>
+
       <div class="section-container">
-        <div class="employee-payments">
-          <h3>Employee Payments</h3>
-          <ul>
-            <!-- Replace this list with  MySQL database 'employee' table data -->
-            <li>
-              Employee 1
-              <button class="payment-btn">Make Payment</button>
-              <button class="history-btn">Payment History</button>
-            </li>
-            <li>
-              Employee 2
-              <button class="payment-btn">Make Payment</button>
-              <button class="history-btn">Payment History</button>
-            </li>
-          </ul>
+        <div class="payment">
+          <h3> Pay Invoice </h3>
+          <!-- Payment form validated by sys.invoices -->
+          <form>
+            <label for="Invoice">Invoice:</label>
+            <input type="text" id="invoice" name="invoice">
+            <br>
+            <label for="account_number">Account Number:</label>
+            <input type="text" id="accountNum" name="accountNum">
+            <br>
+            <label for="routingNum">Routing Number:</label>
+            <input type="text" id="routingNum" name="routingNum">
+            <br>
+            <button type="submit">Submit</button>
+          </form>
+        
         </div>
 
         <div class="contact">
           <h3>Contact</h3>
+          <!-- Contact form sent to sys.contactform -->
           <form>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name">
