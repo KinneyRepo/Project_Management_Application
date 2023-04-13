@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/login.css" type="text/css"/>
     </style>
 </head>
+
 <body>
+
 <div class="container">
     <div>
     <h1>Login</h1>
@@ -53,9 +55,8 @@
 
     };
 
-
-    
     ?>
+
     <form action="login.php" method="post">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
@@ -67,7 +68,8 @@
         <input type="submit" value="Login">
         </div>
         <div id = "signUpBtn">
-        <a href="">Sign Up</a>
+        <a class="signup" href="">Sign Up</a>
+        <a class="support" href="support.php">Support</button>
         </div>
     </form>
 </div>
