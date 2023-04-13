@@ -62,44 +62,20 @@ footer {
     margin-top: 20px;
 }
 
-.employee-payments,
+.payment, 
 .contact {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 40px;
+    margin: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 48%;
+    width: 45%;
 }
 
 h3 {
     text-align: center;
     margin-bottom: 20px;
     color: #345d84;
-}
-
-.employee-payments ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.employee-payments li {
-    margin-bottom: 15px;
-}
-
-.payment-btn,
-.history-btn {
-    background-color: #345d84;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 5px 10px;
-    margin-left: 10px;
-    border-radius: 3px;
-}
-
-.payment-btn:hover,
-.history-btn:hover {
-    background-color: #2d4a6b;
 }
 
 .contact form {
@@ -124,6 +100,36 @@ h3 {
 }
 
 .contact button {
+    width: 100%;
+    background-color: #345d84;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+.payment form {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment label {
+    margin-bottom: 5px;
+    color: #345d84;
+}
+
+.payment input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #c4d4e2;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.payment button {
     width: 100%;
     background-color: #345d84;
     color: white;
