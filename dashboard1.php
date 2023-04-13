@@ -18,19 +18,21 @@ if (!isset($_SESSION['user_id'])) {
 <body>
 	<div class="sidebar">
 	<p class="logo"></span>Project Management Plus</p>
- 	 <a </i> &nbsp;&nbsp;Dashboard</a>
- 	 <a </i> &nbsp;&nbsp;Employee</a>
- 	 <a </i> &nbsp;&nbsp;Projects</a>
- 	 <a </i> &nbsp;&nbsp;Payment</a>
- 	 <a </i> &nbsp;&nbsp;Support</a>
-  
+	<ul>
+		<li><a class ="active" href='dashboard1.php'>Dashboard</a></li>
+		<li><a href='employees.php'>Employee</a></li>
+		<li><a href='projects.php'>Projects</a></li>
+		<li><a href='projectplans.php'>Project Plans</a></li>
+		<li><a href='support.php'>Support</a></li>
+	</ul>
 
-</div>
+	</div>
+
 	
 	<div class="logout">
 		<p>Logout</p>
 	</div>
-</div>
+
 
 
 </body>

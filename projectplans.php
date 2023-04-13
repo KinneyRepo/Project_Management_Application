@@ -10,7 +10,7 @@ if (!isset($_SESSION['user_id'])) {
 <head>
 	<meta charset="UTF-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Employee</title>
+	<title>Project Plans</title>
 	<link rel="stylesheet" href="css/dashboard.css" type="text/css"/>
 	
 </head>
@@ -18,16 +18,16 @@ if (!isset($_SESSION['user_id'])) {
 <body>
 	<div class="sidebar">
 	<p class="logo"></span>Project Management Plus</p>
-  <ul>
+    <ul>
 		<li><a href='dashboard1.php'>Dashboard</a></li>
-		<li><a class ="active" href='employees.php'>Employee</a></li>
+		<li><a href='employees.php'>Employee</a></li>
 		<li><a href='projects.php'>Projects</a></li>
-		<li><a href='projectplans.php'>Project Plans</a></li>
+		<li><a class ="active" href='projectplans.php'>Project Plans</a></li>
 		<li><a href='support.php'>Support</a></li>
 	</ul>
-  
-</div>
 	
+    </div>
+
 	<div class="logout">
 		<p>Logout</p>
 	</div>
