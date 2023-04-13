@@ -1,7 +1,8 @@
 body{
   margin:0px;
   padding: 0px;
-  background-color:#5F9EA0;
+/*  background-color:#5F9EA0;*/
+  background-color:#f0f0f0;
   overflow: hidden;
   font-family: system-ui;
 }
@@ -18,7 +19,8 @@ body{
   z-index: 1;
   left: 0;
   right: 25px;
-  background-color: #008B8B;
+  /*background-color: #008B8B;*/
+  background-color: #345d84;
   overflow: hidden;
   transition: 0.5s;
   padding-top: 30px;
@@ -26,17 +28,33 @@ body{
   top: 0;
   font-size: 36px;
 }
-.sidebar a {
+.sidebar li a {
   padding: 15px 8px 15px 32px;
   text-decoration: none;
   font-size: 20px;
-  color: #FFDAB9;
+  color: #f0f0f0;
   display: block;
   transition: 0.3s;
 }
-.sidebar a:hover {
-  color: #f1f1f1;
-  background-color:#ffdab9;
+
+.sidebar li a.active {
+  background-color: #3b7296 ;
+  color: white ;
+}
+
+
+.sidebar li a:hover {
+  /*color: #f1f1f1;*/
+  color: #345d84;
+  /*background-color:#ffdab9;*/
+  background-color: #f0f0f0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  
 }
 
 .logout{
@@ -47,7 +65,7 @@ body{
 }
 
 .logout p{
-  color: white;
+  color: #345d84;
   font-weight: 500;
   margin-left: 55px;
   margin-top: 10px;
