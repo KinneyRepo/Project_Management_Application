@@ -27,10 +27,14 @@ if (!isset($_SESSION['user_id'])) {
 		<li><a href='support.php'>Support</a></li>
 	</ul>
   </div>
-	
-	<div class="logout">
-		<p>Logout</p>
+  <div class="logout">
+	<p>
+		<form>
+			<button type="submit" formaction="logout.php">Logout</button>
+		</form>
+	</p>
 	</div>
+
 
 
 </body>

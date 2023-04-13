@@ -75,8 +75,8 @@ body{
   font-size: 20px;
 }
 
-/* CSS */
-.logout .button {
+/* CSS for logout button*/
+.logout button{
   align-items: center;
   appearance: none;
   background-color: #345d84;

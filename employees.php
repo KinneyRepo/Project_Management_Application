@@ -27,10 +27,13 @@ if (!isset($_SESSION['user_id'])) {
 	</ul>
   
 </div>
-	
-	<div class="logout">
-		<p>Logout</p>
-	</div>
+<div class="logout">
+	<p>
+		<form>
+			<button type="submit" formaction="logout.php">Logout</button>
+		</form>
+	</p>
+</div>
 
 
 

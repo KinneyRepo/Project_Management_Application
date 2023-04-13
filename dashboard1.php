@@ -28,10 +28,14 @@ if (!isset($_SESSION['user_id'])) {
 
 	</div>
 
-	
 	<div class="logout">
-		<p>Logout</p>
+	<p>
+		<form>
+			<button type="submit" formaction="logout.php">Logout</button>
+		</form>
+	</p>
 	</div>
+
 
 
 
