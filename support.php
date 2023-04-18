@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project Management Plus</title>
   <link rel="stylesheet" href="css/payment.css" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -42,18 +43,21 @@
         <div class="contact">
           <h3>Contact</h3>
           <!-- Contact form sent to sys.contactform -->
-          <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+          <form id="contact-form" method="POST" action="processContactForm.php">
+          <label for="name">Name:</label>
+           <input type="text" id="name" name="contactName">
             <br>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="contactEmail">
             <br>
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5"></textarea>
+            <textarea id="message" name="contactMessage" rows="5"></textarea>
             <br>
             <button type="submit">Submit</button>
           </form>
+          <div id="success-message" style="display: none;
+              margin: 10px 10px 10px 10px;
+              text-align: center;">Message sent successfully!</div>
         </div>
       </div>
     </div>
@@ -61,6 +65,40 @@
   <footer>
     &copy; 2023 Project Management Plus. All Rights Reserved.
   </footer>
+  <script>
+  $(document).ready(function() {
+    $("#contact-form").submit(function(e) {
+      e.preventDefault(); // Prevent default form submission behavior
+      
+      // Serialize the form data
+      const formData = $(this).serialize();
+      
+      
+      $.ajax({
+        type: "POST",
+        url: "processContactForm.php",
+        data: formData,
+        success: function() {
+          // Show the success message
+          $("#success-message").fadeIn();
+          
+          // Clear the form fields
+          $("#contact-form").trigger("reset");
+          
+          // Hide the success message after 5 seconds
+          setTimeout(function() {
+            $("#success-message").fadeOut();
+          }, 5000);
+        },
+        error: function() {
+          // Display an error message
+          alert("An error occurred. Please try again.");
+        }
+      });
+    });
+  });
+</script>
+
 </body>
 
 </html>

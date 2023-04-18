@@ -5,6 +5,7 @@ body {
     padding: 0;
 }
 
+
 header {
     background-color: #345d84;
     color: white;
@@ -62,7 +63,7 @@ footer {
     margin-top: 20px;
 }
 
-.payment, 
+.payment,
 .contact {
     background-color: #ffffff;
     padding: 40px;
