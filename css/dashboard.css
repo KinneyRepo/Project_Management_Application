@@ -1,18 +1,85 @@
-body{
-  margin:0px;
+.top-navbar {
+  background-color: #345d84;
+  height: 60px;
+  padding: 10px 30px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: calc(100% - 300px);
+  z-index: 10;
+}
+
+.main-content {
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-left: 325px;
+  margin-top: 100px;
+  margin-right: 100px;
+  padding: 30px;
+  position: relative;
+  width: 70%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.project-status-green {
+  color: green;
+}
+
+.project-status-yellow {
+  color: yellow;
+}
+
+.project-status-red {
+  color: red;
+}
+
+.project-status-canceled {
+  color: grey;
+}
+
+.status-circle {
+  display: inline-block;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  margin-right: 5px;
+}
+
+
+
+body {
+  margin: 0px;
   padding: 0px;
-/*  background-color:#5F9EA0;*/
-  background-color:#f0f0f0;
+  /*  background-color:#5F9EA0;*/
+  background-color: #f0f0f0;
   overflow: hidden;
   font-family: system-ui;
 }
-.logo{
+
+.logo {
   margin: 0px;
   margin-left: 28px;
   font-weight: bold;
   color: white;
   margin-bottom: 30px;
 }
+
 .sidebar {
   height: 100%;
   width: 300px;
@@ -28,6 +95,7 @@ body{
   top: 0;
   font-size: 36px;
 }
+
 .sidebar li a {
   padding: 15px 8px 15px 32px;
   text-decoration: none;
@@ -38,8 +106,8 @@ body{
 }
 
 .sidebar li a.active {
-  background-color: #3b7296 ;
-  color: white ;
+  background-color: #3b7296;
+  color: white;
 }
 
 
@@ -51,23 +119,23 @@ body{
 }
 
 .sidebar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .button {
   float: right;
 }
 
-.logout{
+.logout {
   float: right;
   width: 160px;
   font-size: 40px;
   padding: 20px;
 }
 
-.logout p{
+.logout p {
   color: #345d84;
   font-weight: 500;
   margin-left: 55px;
@@ -76,19 +144,18 @@ body{
 }
 
 /* CSS for logout button*/
-.logout button{
+.logout button {
   align-items: center;
   appearance: none;
-  background-color: #345d84;
+  background-color: white;
   border-radius: 24px;
   border-style: none;
-  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
   box-sizing: border-box;
-  color: white;
   cursor: pointer;
   display: inline-flex;
   fill: currentcolor;
-  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
   font-size: 14px;
   font-weight: 500;
   height: 48px;
@@ -101,11 +168,18 @@ body{
   position: relative;
   text-align: center;
   text-transform: none;
-  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   width: auto;
-  will-change: transform,opacity;
+  will-change: transform, opacity;
   z-index: 0;
+}
+
+.logout {
+  float: right;
+  font-size: 20px;
+  padding: 10px 20px;
+  /* Adjust padding */
 }
