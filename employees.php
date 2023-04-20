@@ -25,6 +25,8 @@ if (!isset($_SESSION['user_id'])) {
 		<li><a href='projects.php'>Projects</a></li>
 		<li><a href='projectplans.php'>Project Plans</a></li>
 		<li><a href='support.php'>Support</a></li>
+    <li><a href='resetPassword.php'>Reset Password</a></li>
+
 	</ul>
   
 </div>
