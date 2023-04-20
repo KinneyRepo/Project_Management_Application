@@ -68,7 +68,6 @@
         <input type="submit" value="Login">
         </div>
         <div id = "signUpBtn">
-        <a class="signup" href="">Sign Up</a>
         <a class="support" href="support.php">Support</button>
         </div>
     </form>
