@@ -13,7 +13,27 @@ if (!isset($_SESSION['user_id'])) {
 	<title>Employee</title>
 	<link rel="stylesheet" href="css/dashboard.css" type="text/css"/>
 	<link rel="stylesheet" href="css/employee.css" />
-	
+
+	<style>
+	tr:hover
+	{
+		background-color:#345d84;
+		color:white;
+		cursor:pointer;
+	}
+
+	</style>
+
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('table tbody tr').click(function () {
+				alert($(this).text());
+			});
+		});
+
+	</script>
+
 </head>
 
 <body>
@@ -35,7 +55,7 @@ if (!isset($_SESSION['user_id'])) {
 <div class="logout">
 	<p>
 		<form>
-			<button type="submit" formaction="logout.php">Logout</button>
+		<button type="submit" formaction="logout.php">Logout</button>
 		</form>
 	</p>
 </div>
@@ -49,7 +69,6 @@ if (!isset($_SESSION['user_id'])) {
             <a href="#">See all</a>
           </div>
 
-
           <table>
             <thead>
               <tr>
@@ -60,9 +79,8 @@ if (!isset($_SESSION['user_id'])) {
                 <th>Active</th>
               </tr>
             </thead>
+
             <tbody>
-
-
               <tr>
                 <td>1</td>
                 <td>John</td>
@@ -104,6 +122,7 @@ if (!isset($_SESSION['user_id'])) {
               </tr>
             </tbody>
           </table>
+
         </div>
 
 
