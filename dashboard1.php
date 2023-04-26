@@ -5,6 +5,7 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 require_once 'fetchProjects.php';
+require_once 'fetchContacts.php';
 ?>
 
 <!Doctype HTML>
@@ -37,8 +38,32 @@ require_once 'fetchProjects.php';
     </form>
   </div>
 </div>
-
-	<div class="main-content">
+<div class ="main-content">
+<div class="contact-list">
+    <h2>Contacts</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Message</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+        $contacts = fetchContacts();
+        foreach ($contacts as $contact) {
+            echo "<tr>";
+            echo "<td>{$contact['contactName']}</td>";
+            echo "<td>{$contact['contactEmail']}</td>";
+            echo "<td>{$contact['contactMessage']}</td>";
+            echo "</tr>";
+        }
+        ?>
+      </tbody>
+    </table>
+  </div>
+	<div class="project-list">
   <h2>Current Projects</h2>
   <table>
     <thead>
@@ -79,8 +104,11 @@ require_once 'fetchProjects.php';
       echo "</tr>";
   }
   ?>
+  
 </tbody>
   </table>
+</div>
+
 </div>
 
 
