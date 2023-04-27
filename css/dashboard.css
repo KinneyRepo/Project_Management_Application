@@ -143,8 +143,8 @@ body {
 .logout {
   float: right;
   width: 160px;
-  font-size: 40px;
-  padding: 20px;
+  font-size: 20px;
+  padding: 10px 20px;
 }
 
 .logout p {
@@ -187,11 +187,4 @@ body {
   width: auto;
   will-change: transform, opacity;
   z-index: 0;
-}
-
-.logout {
-  float: right;
-  font-size: 20px;
-  padding: 10px 20px;
-  /* Adjust padding */
 }
